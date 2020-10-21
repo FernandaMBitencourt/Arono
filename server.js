@@ -6,8 +6,7 @@ const MongoClient = require('mongodb').MongoClient
 
 const uri = "mongodb+srv://fernanda:4dHXuXLYO8nBwJ78@cluster0.gbwja.mongodb.net/test"
 
-    //Mongo Cliente
-   
+      //Mongo Cliente
       MongoClient.connect(uri, (err, client) => {
 
         useUnifiedTopology: true
@@ -32,8 +31,7 @@ const uri = "mongodb+srv://fernanda:4dHXuXLYO8nBwJ78@cluster0.gbwja.mongodb.net/
     // Ejs
     app.set('view engine', 'ejs')
 
-    //Rotas
-    
+    //Rotas   
     app.get('/', (req, res) => {
       res.render('index')
     })
@@ -49,7 +47,7 @@ const uri = "mongodb+srv://fernanda:4dHXuXLYO8nBwJ78@cluster0.gbwja.mongodb.net/
         console.log('Salvo no banco de dados')
         res.redirect('/')
       
-        db.collection('formularios').find().toArray((err, results) => { // Mostrando o conteúdo da collection
+        db.collection('formularios').find().toArray((err, results) => { 
            console.log(results)
         })
       })
