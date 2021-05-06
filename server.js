@@ -25,7 +25,7 @@ const uri = "mongodb+srv://fernanda:4dHXuXLYO8nBwJ78@cluster0.gbwja.mongodb.net/
     app.use(bodyParser.urlencoded({ extended: true}))
     app.use(bodyParser.json())
 
-    //Public  //Pasta de arquivos estaticos
+    //Pasta de arquivos estaticos
       app.use('/static',express.static('public'))
       
     // Ejs
