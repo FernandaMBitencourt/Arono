@@ -1,3 +1,3 @@
 # Arono
 
-Pagina de capturar emails para um e-commerce de cuecas chamado Arono, para fazer uma lista de clientes,os emails capturados são enviados para o banco de dados.
+Email capture page for underwear e-commerce called Arono, for customer list, sent data emails are sent to database, Mongodb.
